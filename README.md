@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [https://github.com/ChinatuL/Four-Card-Feature-Section](https://github.com/ChinatuL/Four-Card-Feature-Section)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [https://chinatul.github.io/Four-Card-Feature-Section/](https://chinatul.github.io/Four-Card-Feature-Section/)
 
 ## My process
 
