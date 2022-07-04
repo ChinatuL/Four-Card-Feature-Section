@@ -1,0 +1,127 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 4rem 10%;
+    color: var(--grayish-blue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+header {
+    text-align: center;
+}
+
+.header-title {
+    padding-bottom: 1rem;
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.header-title > span {
+    font-weight: 200;
+}
+
+.header-description {
+    padding-bottom: 2rem;
+    font-weight: 400;
+}
+
+.card {
+    margin: 0 0 1.5rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    padding-bottom: 0.5rem;
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-description {
+    padding-bottom: 3rem;
+    line-height: 1.5;
+}
+
+.card-icon {
+    text-align: right;
+}
+
+.supervisor {
+    border-top: 0.2rem solid var(--cyan);
+}
+
+.team-builder {
+    border-top: 0.2rem solid var(--red);
+}
+
+.karma {
+    border-top: 0.2rem solid var(--orange);
+}
+
+.calculator {
+    border-top: 0.2rem solid var(--blue);
+}
+
+.attribution {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "supervisor team-builder calculator"
+            "supervisor karma calculator";
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1.5rem;
+    }
+
+    header {
+        margin-top: 0;
+        width: 30rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+}
